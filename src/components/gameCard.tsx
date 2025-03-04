@@ -15,11 +15,11 @@ export default function GameCard(props: GameCardProps) {
 
     const router = useRouter()
 
-    const onClick = async (event) => {
+    const onClick = async (event: React.MouseEvent<HTMLAnchorElement>) => {
         if (props.saveMini) {
             event.preventDefault()
             storeMini(props.saveMini!)
-            await router.push(event.target.href)
+            await router.push(event.currentTarget.href)
         }
     }
 
