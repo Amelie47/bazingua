@@ -1,0 +1,127 @@
+[
+    {
+        "name": "ABBA",
+        "slug": "abba",
+        "config": {
+            "points": 10,
+            "players": {
+                "min": -1,
+                "max": -1
+            },
+            "equipment": [
+                "PAPER",
+                "PEN"
+            ],
+            "rules": [
+                "dzdzd",
+                "mpa akjd"
+            ]
+        },
+        "challenges": [],
+        "play": {
+            "questions": {
+                "set": false
+            },
+            "timer": {
+                "set": true,
+                "duration": 60000
+            },
+            "stopwatch": {
+                "set": false
+            },
+            "words": {
+                "set": false
+            },
+            "operations": {
+                "set": false
+            },
+            "empty": {
+                "set": false
+            }
+        }
+    },
+    {
+        "name": "Attention tension",
+        "slug": "attention-tension",
+        "config": {
+            "points": 30,
+            "players": {
+                "min": 2,
+                "max": -1
+            },
+            "equipment": [],
+            "rules": [
+                "dzdzd",
+                "mpa akjd"
+            ]
+        },
+        "challenges": [
+            {
+                "points": 10,
+                "challenge": "Avec un crayon dans la bouche"
+            },
+            {
+                "points": 20,
+                "challenge": "En fermant les yeux"
+            }
+        ],
+        "play": {
+            "questions": {
+                "set": true
+            },
+            "timer": {
+                "set": true,
+                "duration": 30000
+            },
+            "stopwatch": {
+                "set": false
+            },
+            "words": {
+                "set": false
+            },
+            "operations": {
+                "set": false
+            },
+            "empty": {
+                "set": false
+            }
+        }
+    },
+    {
+        "name": "Bataille de pouces",
+        "slug": "pouces",
+        "config": {
+            "points": 10,
+            "players": {
+                "min": 2,
+                "max": -1
+            },
+            "equipment": [],
+            "rules": [
+                "dzdzd",
+                "mpa akjd"
+            ]
+        },
+        "challenges": [],
+        "play": {
+            "questions": {
+                "set": false
+            },
+            "timer": {
+                "set": false
+            },
+            "stopwatch": {
+                "set": false
+            },
+            "words": {
+                "set": false
+            },
+            "operations": {
+                "set": false
+            },
+            "empty": {
+                "set": true
+            }
+        }
+    }
+]
