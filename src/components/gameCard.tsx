@@ -24,6 +24,10 @@ export default function GameCard(props: GameCardProps) {
     }
 
     return (
-        <Link href={`/mini/${props.page}`} onClick={onClick}>{props.name}</Link>
+        <Link href={`/mini/${props.page}`} onClick={onClick}>
+            <div className='flex flex-col justify-center items-center p-4 rounded-2xl shadow-drop-sm transition-all'>
+                <p>{props.name}</p>
+            </div>
+        </Link>
     )
 }

@@ -12,12 +12,12 @@ export interface MiniGame extends MiniGameSm {
 export type MiniGameConfig = {
     points: number,
     players: MiniGameConfigPlayers
-    equipment: MiniGameEquipment
+    equipment: MiniGameEquipment[]
     rules: string[]
 }
 
 export enum MiniGameEquipment {
-    PAPER, PEN
+    PAPER = "Papier", PEN = "Crayon"
 }
 
 export type MiniGameConfigPlayers = {
@@ -38,6 +38,7 @@ export type MiniGamePlay = {
     stopwatch: MiniGamePlayBase
     words: MiniGamePlayBase
     operations: MiniGamePlayBase
+    abba: MiniGamePlayBase
 }
 
 export type MiniGamePlayBase = {

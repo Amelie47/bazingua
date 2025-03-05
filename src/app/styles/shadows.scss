@@ -1,0 +1,81 @@
+.shadow-inner-lg {
+    &:not(svg) {
+        @apply overflow-hidden relative bg-gray-100 shadow-[inset_6px_6px_10px_0_#D1D9E6,inset_-6px_-6px_10px_0_white];
+
+        &::before {
+            content: " ";
+            height: 100%;
+            width: 100%;
+            background-image: url(../../public/assets/noise.png);
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0;
+            mix-blend-mode: color-burn;
+            opacity: 0.8;
+        }
+
+        * {
+            z-index: 10;
+            background-color: transparent;
+        }
+    }
+}
+
+.shadow-drop-lg {
+    &:not(svg) {
+        @apply bg-gray-100 shadow-[6px_6px_10px_0_#D1D9E6,-6px_-6px_10px_0_white];
+    }
+    path {
+        filter: drop-shadow(6px 6px 10px #D1D9E6) drop-shadow(-6px -6px 10px white);
+    }
+}
+
+.shadow-inner-sm {
+    &:not(svg) {
+        @apply bg-gray-100 shadow-[inset_2px_2px_2px_0_#D1D9E6,inset_-2px_-2px_2px_0_white];
+
+        &::before {
+            content: " ";
+            height: 100%;
+            width: 100%;
+            background-image: url(../../public/assets/noise.png);
+            background-size: cover;
+            background-position: center;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0;
+            mix-blend-mode: color-burn;
+            opacity: 0.8;
+        }
+
+        * {
+            z-index: 10;
+            background-color: transparent;
+        }
+    }
+}
+
+.shadow-drop-sm {
+    &:not(svg) {
+        @apply bg-gray-100 shadow-[2px_2px_2px_0_#D1D9E6,-2px_-2px_2px_0_white];
+    }
+    path {
+        filter: drop-shadow(2px 2px 2px #D1D9E6) drop-shadow(-2px -2px 2px white);
+    }
+}
+
+.shadow-drop-sm-text {
+    text-shadow: 2px 2px 2px #D1D9E6, -2px -2px 2px white;
+}
+
+.shadow-drop-sm-blur {
+    @apply shadow-[2px_2px_8px_0_#DCE1EA,-2px_-2px_2px_0_white] bg-none;
+}
+
+.shadow-drop-sm-text-blur {
+    text-shadow: 2px 2px 8px #DCE1EA, -2px -2px 2px white;
+}

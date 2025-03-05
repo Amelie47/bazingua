@@ -13,8 +13,8 @@
                 "PEN"
             ],
             "rules": [
-                "dzdzd",
-                "mpa akjd"
+                "Le jeu consiste à transformer une suite de lettres en appliquant des règles précises de réduction. À chaque tour, les joueurs modifient la chaîne en suivant ces règles jusqu'à ce qu’aucune autre transformation ne soit possible.",
+                "Le but est d'obtenir la séquence la plus courte possible, et celui qui y parvient gagne la partie."
             ]
         },
         "challenges": [],
@@ -23,8 +23,7 @@
                 "set": false
             },
             "timer": {
-                "set": true,
-                "duration": 60000
+                "set": false
             },
             "stopwatch": {
                 "set": false
@@ -34,6 +33,9 @@
             },
             "operations": {
                 "set": false
+            },
+            "abba": {
+                "set": true
             },
             "empty": {
                 "set": false
@@ -51,8 +53,7 @@
             },
             "equipment": [],
             "rules": [
-                "dzdzd",
-                "mpa akjd"
+                "bli"
             ]
         },
         "challenges": [
@@ -82,6 +83,9 @@
             "operations": {
                 "set": false
             },
+            "abba": {
+                "set": false
+            },
             "empty": {
                 "set": false
             }
@@ -98,8 +102,9 @@
             },
             "equipment": [],
             "rules": [
-                "dzdzd",
-                "mpa akjd"
+                "poulalaaa",
+                "pumpa",
+                "lorem ipsum"
             ]
         },
         "challenges": [],
@@ -117,6 +122,9 @@
                 "set": false
             },
             "operations": {
+                "set": false
+            },
+            "abba": {
                 "set": false
             },
             "empty": {
