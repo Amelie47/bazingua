@@ -6,11 +6,9 @@ type EquipmentTagProps = {
 
 export default function EquipmentTag(props: EquipmentTagProps) {
 
-    const value = Object.values(MiniGameEquipment)[Object.keys(MiniGameEquipment).indexOf(props.tag)]
-
     return (
-        <div className='px-4 py-1 rounded-full shadow-drop-sm-blur w-fit'>
-            <span className='text-gray-500! text-xs!'>{value}</span>
+        <div className='px-2 py-[1px] rounded-full shadow-drop-sm-blur w-fit'>
+            <span className='text-gray-500! text-xs!'>{props.tag}</span>
         </div>
     )
 }

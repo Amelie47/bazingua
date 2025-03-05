@@ -7,6 +7,16 @@ export interface MiniGame extends MiniGameSm {
     config: MiniGameConfig
     challenges: MiniGameChallenge[]
     play: MiniGamePlay
+    categories: MiniGameCategory[]
+}
+
+export enum MiniGameCategory {
+    CHALLENGE = "Défi",
+    FAST = "Partie rapide",
+    WORDS = "Jouer avec les mots",
+    TURNS = "Tour par tour",
+    TEAM = "En équipe",
+    CLASSIC = "Grand classique"
 }
 
 export type MiniGameConfig = {
@@ -17,7 +27,11 @@ export type MiniGameConfig = {
 }
 
 export enum MiniGameEquipment {
-    PAPER = "Papier", PEN = "Crayon"
+    PAPER = "Papier",
+    PEN = "Crayon",
+    OBJECTS = "Objets divers",
+    GLASS = "Verre",
+    WATER = "Eau"
 }
 
 export type MiniGameConfigPlayers = {
@@ -31,20 +45,16 @@ export type MiniGameChallenge = {
 }
 
 // -- Play
+
 export type MiniGamePlay = {
-    empty: MiniGamePlayBase
-    questions: MiniGamePlayBase
-    timer: MiniGamePlayTimer
-    stopwatch: MiniGamePlayBase
-    words: MiniGamePlayBase
-    operations: MiniGamePlayBase
-    abba: MiniGamePlayBase
+    ground: MiniGamePlayground[]
+    metadata: MiniGamePlaMetadata
 }
 
-export type MiniGamePlayBase = {
-    set: boolean
+export enum MiniGamePlayground {
+    EMPTY, QUESTIONS, TIMER, STOPWATCH, WORDS, OPERATIONS, ABBA
 }
 
-export interface MiniGamePlayTimer extends MiniGamePlayBase {
-    duration: number // in ms
+export type MiniGamePlaMetadata = {
+    duration?: number
 }

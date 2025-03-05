@@ -8,7 +8,7 @@ export default function Abba() {
     return (
         <div className='w-full flex-1 flex flex-col justify-center items-center max-w gap-10'>
             <div className='w-full flex flex-col items-center gap-6'>
-                <p className='text-3xl!'>{generateRandomABBAString()}</p>
+                <p className='text-3xl! tracking-wider'>{generateRandomABBAString()}</p>
                 <div className='shadow-drop-sm p-6 w-full rounded-2xl flex flex-col gap-2'>
                     <div className='grid grid-cols-3 items-center'>
                         <div className='m-auto'><span>BB</span></div>

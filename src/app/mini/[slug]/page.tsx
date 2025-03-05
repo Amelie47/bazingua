@@ -30,9 +30,9 @@ export default function MiniGame() {
 
                 <Button name='Jouer' page={`mini/${mini.slug}/play`} type={ButtonType.Button} />
                 <div className='flex flex-col gap-6 w-full'>
-                    <div className='w-full flex flex-wrap gap-3'>
+                    {mini.config.equipment.length > 0 && <div className='w-full flex flex-wrap gap-2'>
                         {mini.config.equipment.map((item: MiniGameEquipment, index) => (<EquipmentTag key={index} tag={item} />))}
-                    </div>
+                    </div>}
                     <div className='flex flex-col w-full gap-3'>
                         {mini.config.rules.map((rule, index) => (<p key={index} className='text-gray-400! text-sm!'>{rule}</p>))}
                     </div>

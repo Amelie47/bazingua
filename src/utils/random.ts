@@ -3,7 +3,7 @@ export function getRandomNumberInRange(min: number, max: number) {
 }
 
 export function generateRandomABBAString() {
-    const length = getRandomNumberInRange(10, 15)
+    const length = 12
     let result = '';
     for (let i = 0; i < length; i++) {
         result += Math.random() < 0.5 ? 'A' : 'B';
