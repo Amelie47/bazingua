@@ -1,6 +1,7 @@
 'use client'
 
 import Button, { ButtonType } from '@/components/button';
+import ButtonBack from '@/components/buttonBack';
 import EquipmentTag from '@/components/equipmentTag';
 import { MiniGameEquipment } from '@/types';
 import { formatPoints } from '@/utils/format';
@@ -9,9 +10,12 @@ import Image from 'next/image';
 
 export default function MiniGame() {
     const mini = getMini()
-    const isTournoi = true
+    const isTournoi = false
     return (
-        <main className='gap-14'>
+        <main className='relative gap-14'>
+            <div className='fixed top-0 left-0 p-6'>
+                <ButtonBack />
+            </div>
             {isTournoi && <div className='rounded-lg px-6 py-1 shadow-drop-sm-blur flex justify-center gap-1'>
                 <span className=' text-gray-700!'>1</span>
                 <span className=' text-gray-700!'>/</span>

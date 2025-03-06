@@ -6,7 +6,7 @@
     @apply flex flex-col min-h-screen p-6 gap-6;
 
     main {
-        @apply w-full flex-1 flex flex-col items-center;
+        @apply w-full flex-1 flex flex-col items-center lg:max-w-[500px] m-auto;
     }
 }
 
