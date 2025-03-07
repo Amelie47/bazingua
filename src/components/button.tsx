@@ -49,7 +49,7 @@ export default function Button({ disabled = false, ...props }: ButtonProps) {
                 }
                 else {
                     if (props.onClick !== null) {
-                        return <div onClick={() => !disabled && props.onClick!()} className={`bg-gray-100 rounded-full p-2 flex justify-center items-center ${!disabled ? 'shadow-drop-lg' : 'bg-gray-50! shadow-inner-sm no-noise'} overflow-hidden h-10 min-h-10 w-10 min-w-10`}>
+                        return <div onClick={() => !disabled && props.onClick!()} className={`cursor-pointer bg-gray-100 rounded-full p-4 flex justify-center items-center ${!disabled ? 'shadow-drop-lg shadow-btn' : 'bg-gray-50! shadow-inner-sm no-noise'} overflow-hidden h-14 min-h-14 w-14 min-w-14`}>
                             <Icon type={props.icon!} classNames="shadow-drop-sm" />
                         </div>
                     } else {

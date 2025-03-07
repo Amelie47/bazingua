@@ -30,6 +30,10 @@
 .shadow-drop-lg {
     &:not(svg) {
         @apply bg-gray-100 shadow-[6px_6px_10px_0_#D1D9E6,-6px_-6px_10px_0_white];
+
+        &.shadow-btn:hover {
+            @apply bg-gray-100 shadow-[inset_2px_2px_2px_0_#D1D9E6,inset_-2px_-2px_2px_0_white];
+        }
     }
     > path {
         filter: drop-shadow(6px 6px 10px #D1D9E6) drop-shadow(-6px -6px 10px white);

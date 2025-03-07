@@ -15,7 +15,7 @@ export default function Empty() {
                             </g>
                             <defs>
                                 <filter id="filter0_dd_42_581" x="0" y="0" width="161" height="251" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                    <feFlood floodOpacity="0" result="BackgroundImageFix" />
                                     <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
                                     <feOffset dx="10" dy="10" />
                                     <feGaussianBlur stdDeviation="10" />
