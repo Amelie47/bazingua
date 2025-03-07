@@ -24,7 +24,7 @@ export default function MiniGame() {
             <div className='flex flex-col gap-12 items-center w-full max-w'>
                 <div className='w-full flex justify-between'>
                     <div className='flex flex-col items-center gap-1.5 flex-1'>
-                        <Image src="/icons/abba.svg" height={89} width={89} alt='mini game logo' />
+                        <Image src="/icons/splash.svg" height={89} width={89} alt='mini game logo' />
                         <p>{mini.name}</p>
                     </div>
                     {isTournoi && <div className='flex-1 h-[120px] w-[120px] min-w-[120px] min-h-[120px] shadow-inner-lg rounded-full flex justify-center items-center'>

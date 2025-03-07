@@ -2,7 +2,7 @@
 @import "./main.scss";
 
 * {
-    @apply bg-gray-100 text-gray-900 text-base;
+    @apply text-gray-900 text-base;
     font-family: 'Molengo';
 }
 
@@ -11,5 +11,5 @@ svg {
 }
 
 body {
-    @apply p-0 m-0;
+    @apply p-0 m-0 bg-gray-100;
 }
